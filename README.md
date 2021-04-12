@@ -1,7 +1,7 @@
 # FGFP QMP GWAS
 	by: David Hughes
 	date: Dec 2020
-	project portal: wt1/wp2/004
+	University of Bristol IEU project portal ID: wt1/wp2/004
 
 ## Description
 
@@ -178,11 +178,13 @@ X) ---- 10_order_gwas_samplefile.R ----
 XI) ---- 11_run_continuous_GWAS.sh ----
 
 	1) Run all of the AB and trunAB MTs (~10 mins)
+	2) The accompaning paramater file - not shared here - "job13paramaters_AB.txt" contains 4 columns of data, 1 line for each trait to run. This paramater file is passed to the shell script as stated above under the heading "How to submit GWAS job array on BP"
 
 XII) ---- 12_run_PA_GWAS.sh ----
 
 	1) Run all of the PA MTs
 		- these run longer as they include all of our covariates (~5 hours)
+	2) The accompaning paramater file - not shared here -"job13paramaters_PA.txt" contains 4 columns of data, 1 line for each trait to run. This paramater file is passed to the shell script as stated above under the heading "How to submit GWAS job array on BP"
 
 XII) ---- 13_format_snptest_results.sh ----
 
